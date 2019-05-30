@@ -5,7 +5,7 @@ python script to change the status of a pool members on F5 using the [F5 iContro
 ## Install
 ### Clone
 ```bash
-git clone git@git.dadapro.net:lgaggini/spartacus.git
+git clone git@git.dadapro.net:lgaggini/f5_set_pool_members.git
 ```
 
 ### Requirements
