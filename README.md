@@ -20,6 +20,12 @@ USER='myuser'
 PASS='mypass'
 ```
 
+You have also to configure also a list of available pools to choose from, to prevent random pool damages.
+```python
+POOLS=['mysafepool1', 'mysafepool2']
+```
+
+
 ## Usage
 
 ```bash

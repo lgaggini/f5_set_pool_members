@@ -3,17 +3,16 @@
 from f5.bigip import ManagementRoot
 import argparse
 import logging
-from settings import ENDPOINT, USER, PASS
+from settings import ENDPOINT, USER, PASS, POOLS
 
-available_pools = ['popper-stag-priv-http']
-available_states = ['enabled', 'disabled', 'forced_offline']
+STATES = ['enabled', 'disabled', 'forced_offline']
 
 description = 'enables, disables and forces offline f5 pools members'
 parser = argparse.ArgumentParser(description=description)
 
-parser.add_argument('-p', '--pool', required=True, choices=available_pools,
+parser.add_argument('-p', '--pool', required=True, choices=POOLS,
                     help='pool to work with')
-parser.add_argument('-s', '--state', required=True, choices=available_states,
+parser.add_argument('-s', '--state', required=True, choices=STATES,
                     help='pool to work with')
 parser.add_argument('-r', '--readonly', dest='readonly',
                     action='store_true',

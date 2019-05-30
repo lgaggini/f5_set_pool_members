@@ -1,3 +1,4 @@
 ENDPOINT='my.endpoint.it'
 USER='myuser'
 PASS='mypass'
+POOLS=['mysafepool1', 'mysafepool2']
